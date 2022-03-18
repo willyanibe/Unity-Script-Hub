@@ -1,0 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
+public class CollisionDetection : MonoBehaviour
+{
+
+//This is a simple script to enable collision detection on unity
+//Note you must have added a rigidbody component to the parent gameobject for this to work
+
+//For trigger detection
+private void OnTriggerEnter (Collider col) {
+
+  if (col.gameObject.CompareTag ("YourTagName") {
+  //Do something
+  }
+}
+
+//For Collision detection
+private void OnCollisionEnter (Collision col) {
+
+  if (col.gameObject.CompareTag ("YourTagName") {
+  //Do something
+  }
+}
+
+}
