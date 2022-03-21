@@ -1,0 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MoveTowardsScript : MonoBehaviour
+{
+public float speed;
+public Transform target;
+
+
+void Update () {
+
+  float step = speed * Time.deltaTime; // calculate movement distance
+  float singleStep = 1 * Time.deltaTime;
+
+  transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+ 
+    }
+ }
+ 
