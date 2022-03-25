@@ -1,0 +1,12 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SimpleGetComponentScript : MonoBehaviour
+{
+public RigidBody rb;
+void Start () {
+  rb = gameObject.GetComponent<Rigidbody>();
+  
+  }
+}
